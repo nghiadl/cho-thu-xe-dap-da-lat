@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuê Xe Đạp Đà Lạt - Khám Phá Thành Phố Ngàn Hoa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://phuotvivu.com/blog/wp-content/uploads/2021/03/z2145071063651_6f28223f1ee2276d17e68d1488c7b158.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .bike-card-img {
+            /* Chỉnh sửa để hình ảnh hiển thị trọn vẹn (fit) */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #ffffff; /* Nền trắng cho phần khung thừa */
+            height: 200px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-bicycle text-green-600 text-3xl"></i>
+                <span class="text-xl font-bold text-gray-900 tracking-tight">ĐÀ LẠT BIKE RENTAL</span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-green-600 transition">Trang chủ</a>
+                <a href="#bikes" class="hover:text-green-600 transition">Loại xe</a>
+                <a href="#contact" class="hover:text-green-600 transition">Liên hệ</a>
+            </div>
+            <a href="tel:0944510510" class="bg-green-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-green-700 transition flex items-center">
+                <i class="fas fa-phone-alt mr-2"></i> 0944 510 510
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section h-[600px] flex items-center justify-center text-center text-white px-4">
+        <div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">Khám Phá Đà Lạt Bằng Xe Đạp</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto font-light drop-shadow-md">Trải nghiệm không khí se lạnh và những con dốc mộng mơ với dàn xe chất lượng cao từ Giant và Trek.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#bikes" class="bg-white text-green-700 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg">Xem danh sách xe</a>
+                <a href="#booking" class="bg-green-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-green-700 transition shadow-lg">Đặt ngay - 150k/ngày</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Pricing Alert -->
+    <div class="bg-yellow-100 border-b border-yellow-200 py-4 text-center">
+        <p class="text-yellow-800 font-semibold text-lg">
+            <i class="fas fa-tag mr-2"></i> GIÁ THUÊ ĐỒNG GIÁ: <span class="text-red-600 text-2xl">150.000đ</span> / ngày
+        </p>
+    </div>
+
+
+    <!-- Bike List -->
+    <section id="bikes" class="py-16 container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Các Loại Xe Đang Có</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+           
+            <!-- Giant XTC 800 -->
+            <div class="bike-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow">
+                <div class="bike-card-img" style="background-image: url('https://down-vn.img.susercontent.com/file/vn-11134207-820l4-metuw4slyltv66.webp');">
+                    <div class="w-full h-full flex items-center justify-center text-gray-400 italic bg-gray-200 opacity-0 transition-opacity">
+                        [Hình ảnh xe Giant XTC 800]
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Giant XTC 800</h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">Dòng xe địa hình chuyên nghiệp, khung nhôm siêu nhẹ, phuộc hơi êm ái, phù hợp cho mọi cung đường Đà Lạt.</p>
+                    <ul class="text-sm space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Bộ truyền động Shimano 30 speed</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Phanh đĩa dầu an toàn</li>
+                    </ul>
+                    <button onclick="scrollToBooking('Giant XTC 800')" class="w-full bg-gray-900 text-white py-2 rounded-lg hover:bg-black transition">Chọn xe này</button>
+                </div>
+            </div>
+
+
+            <!-- Giant XTC 820 -->
+            <div class="bike-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow">
+                <div class="bike-card-img" style="background-image: url('https://giant.vn/wp-content/uploads/2024/01/XTC820_DeepBlue_1.jpg');">
+                    <div class="w-full h-full flex items-center justify-center text-gray-400 italic bg-gray-200 opacity-0 transition-opacity">
+                        [Hình ảnh xe Giant XTC 820]
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Giant XTC 820</h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">Phiên bản nâng cấp với khả năng leo dốc vượt trội, thiết kế thể thao mạnh mẽ dành cho người thích chinh phục.</p>
+                    <ul class="text-sm space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Khung ALUXX SL siêu bền</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Thích hợp leo dốc Prenn/Mimosa</li>
+                    </ul>
+                    <button onclick="scrollToBooking('Giant XTC 820')" class="w-full bg-gray-900 text-white py-2 rounded-lg hover:bg-black transition">Chọn xe này</button>
+                </div>
+            </div>
+
+
+            <!-- Trek Marlin 5 -->
+            <div class="bike-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow">
+                <div class="bike-card-img" style="background-image: url('https://down-vn.img.susercontent.com/file/vn-11134201-7r98o-lqeec64mv8dz54@resize_w450_nl.webp');">
+                    <div class="w-full h-full flex items-center justify-center text-gray-400 italic bg-gray-200 opacity-0 transition-opacity">
+                        [Hình ảnh xe Trek Marlin 5]
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Trek Marlin 5</h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">Thương hiệu đẳng cấp từ Mỹ. Xe có tư thế ngồi thoải mái, cực kỳ phù hợp cho các bác lớn tuổi đi dạo hồ Xuân Hương.</p>
+                    <ul class="text-sm space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Thiết kế công thái học thoải mái</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Thương hiệu cao cấp quốc tế</li>
+                    </ul>
+                    <button onclick="scrollToBooking('Trek Marlin 5')" class="w-full bg-gray-900 text-white py-2 rounded-lg hover:bg-black transition">Chọn xe này</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- Booking Form Section -->
+    <section id="booking" class="py-16 bg-green-50">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold mb-2">Đặt Xe Nhanh</h2>
+                    <p class="text-gray-500">Vui lòng điền thông tin, chúng tôi sẽ liên hệ lại ngay!</p>
+                </div>
+               
+                <form id="rentalForm" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Họ và Tên</label>
+                            <input type="text" id="userName" required placeholder="Nhập tên của bạn" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Số điện thoại</label>
+                            <input type="tel" id="userPhone" required placeholder="Nhập số điện thoại" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none">
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Chọn loại xe</label>
+                        <select id="bikeType" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none">
+                            <option value="Giant XTC 800">Giant XTC 800</option>
+                            <option value="Giant XTC 820">Giant XTC 820</option>
+                            <option value="Trek Marlin 5">Trek Marlin 5</option>
+                            <option value="Xe khác">Các dòng xe khác</option>
+                        </select>
+                    </div>
+
+
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Ngày bắt đầu thuê</label>
+                        <input type="date" id="startDate" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none">
+                    </div>
+
+
+                    <button type="submit" class="w-full bg-green-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-green-700 shadow-lg shadow-green-200 transition-all active:scale-[0.98]">
+                        XÁC NHẬN ĐẶT XE
+                    </button>
+                </form>
+               
+                <div class="mt-8 pt-8 border-t text-center">
+                    <p class="text-gray-600 mb-2">Hoặc gọi điện trực tiếp để được tư vấn:</p>
+                    <a href="tel:0944510510" class="text-3xl font-bold text-green-600 hover:text-green-700 decoration-none">0944 510 510</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Thông Tin Liên Hệ</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-4 text-green-500"></i>
+                            <p>108 Hoàng Diệu, Phường Cam Ly, TP. Đà Lạt, Tỉnh Lâm Đồng</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone mt-1 mr-4 text-green-500"></i>
+                            <a href="tel:0944510510" class="hover:text-green-400">0944 510 510</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock mt-1 mr-4 text-green-500"></i>
+                            <p>Mở cửa: 06:00 - 20:00 hàng ngày</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700">
+                    <h4 class="font-bold mb-4">Lưu ý khi thuê xe:</h4>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li>• Mang theo CCCD hoặc Hộ chiếu để làm thủ tục.</li>
+                        <li>• Được trang bị miễn phí mũ bảo hiểm & khóa dây.</li>
+                        <li>• Giao xe tận nơi trong nội thành Đà Lạt (có phí hoặc miễn phí tùy quãng đường).</li>
+                        <li>• Hỗ trợ sự cố trên đường 24/7.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 Đà Lạt Bike Rental. Tất cả quyền lợi được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Custom Dialog/Modal for Success -->
+    <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-[100] px-4">
+        <div class="bg-white rounded-2xl p-8 max-w-sm w-full text-center">
+            <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-check text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Đã chuẩn bị nội dung!</h3>
+            <p class="text-gray-600 mb-6">Trang web sẽ chuyển hướng bạn đến ứng dụng nhắn tin để gửi thông tin đặt xe.</p>
+            <button onclick="closeModal()" class="w-full bg-green-600 text-white py-2 rounded-lg font-bold">Đồng ý</button>
+        </div>
+    </div>
+
+
+    <script>
+        function scrollToBooking(bikeName) {
+            const select = document.getElementById('bikeType');
+            select.value = bikeName;
+            document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+        }
+
+
+        function closeModal() {
+            document.getElementById('successModal').classList.add('hidden');
+        }
+
+
+        document.getElementById('rentalForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+           
+            const name = document.getElementById('userName').value;
+            const phone = document.getElementById('userPhone').value;
+            const bike = document.getElementById('bikeType').value;
+            const date = document.getElementById('startDate').value;
+           
+            const phoneNumber = "0944510510";
+            const message = `Chào chủ xe! Tôi là ${name} (SĐT: ${phone}). Tôi muốn đặt xe ${bike} vào ngày ${date}. Vui lòng xác nhận cho tôi nhé!`;
+           
+            document.getElementById('successModal').classList.remove('hidden');
+           
+            const smsUrl = `sms:${phoneNumber}?body=${encodeURIComponent(message)}`;
+           
+            setTimeout(() => {
+                window.location.href = smsUrl;
+                closeModal();
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
+

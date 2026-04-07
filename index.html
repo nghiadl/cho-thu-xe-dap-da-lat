@@ -18,17 +18,15 @@
             background-attachment: fixed;
         }
         .bike-card-img {
-            /* Chỉnh sửa để hình ảnh hiển thị trọn vẹn (fit) */
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
-            background-color: #ffffff; /* Nền trắng cho phần khung thừa */
+            background-color: #ffffff;
             height: 200px;
         }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
-
 
     <!-- Navigation -->
     <nav class="sticky top-0 z-50 bg-white shadow-md">
@@ -48,7 +46,6 @@
         </div>
     </nav>
 
-
     <!-- Hero Section -->
     <header id="home" class="hero-section h-[600px] flex items-center justify-center text-center text-white px-4">
         <div>
@@ -56,19 +53,23 @@
             <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto font-light drop-shadow-md">Trải nghiệm không khí se lạnh và những con dốc mộng mơ với dàn xe chất lượng cao từ Giant và Trek.</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#bikes" class="bg-white text-green-700 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg">Xem danh sách xe</a>
-                <a href="#booking" class="bg-green-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-green-700 transition shadow-lg">Đặt ngay - 150k/ngày</a>
+                <a href="#booking" class="bg-green-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-green-700 transition shadow-lg">Đặt ngay chỉ từ 50k</a>
             </div>
         </div>
     </header>
 
-
     <!-- Pricing Alert -->
-    <div class="bg-yellow-100 border-b border-yellow-200 py-4 text-center">
-        <p class="text-yellow-800 font-semibold text-lg">
-            <i class="fas fa-tag mr-2"></i> GIÁ THUÊ ĐỒNG GIÁ: <span class="text-red-600 text-2xl">150.000đ</span> / ngày
-        </p>
+    <div class="bg-yellow-100 border-b border-yellow-200 py-6 text-center">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-center items-center gap-6 md:gap-16">
+            <p class="text-yellow-800 font-semibold text-lg">
+                <i class="fas fa-clock mr-2 text-xl"></i> THUÊ THEO GIỜ: <span class="text-red-600 text-2xl font-bold">50.000đ</span> / giờ
+            </p>
+            <div class="hidden md:block h-8 w-px bg-yellow-300"></div>
+            <p class="text-yellow-800 font-semibold text-lg">
+                <i class="fas fa-calendar-day mr-2 text-xl"></i> THUÊ THEO NGÀY: <span class="text-red-600 text-2xl font-bold">150.000đ</span> / ngày
+            </p>
+        </div>
     </div>
-
 
     <!-- Bike List -->
     <section id="bikes" class="py-16 container mx-auto px-4">
@@ -78,9 +79,6 @@
             <!-- Giant XTC 800 -->
             <div class="bike-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow">
                 <div class="bike-card-img" style="background-image: url('https://down-vn.img.susercontent.com/file/vn-11134207-820l4-metuw4slyltv66.webp');">
-                    <div class="w-full h-full flex items-center justify-center text-gray-400 italic bg-gray-200 opacity-0 transition-opacity">
-                        [Hình ảnh xe Giant XTC 800]
-                    </div>
                 </div>
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Giant XTC 800</h3>
@@ -89,17 +87,13 @@
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Bộ truyền động Shimano 30 speed</li>
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Phanh đĩa dầu an toàn</li>
                     </ul>
-                    <button onclick="scrollToBooking('Giant XTC 800')" class="w-full bg-gray-900 text-white py-2 rounded-lg hover:bg-black transition">Chọn xe này</button>
+                    <button onclick="scrollToBooking('Giant XTC 800')" class="w-full bg-gray-900 text-white py-2 rounded-lg hover:bg-black transition font-semibold">Chọn xe này</button>
                 </div>
             </div>
-
 
             <!-- Giant XTC 820 -->
             <div class="bike-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow">
                 <div class="bike-card-img" style="background-image: url('https://giant.vn/wp-content/uploads/2024/01/XTC820_DeepBlue_1.jpg');">
-                    <div class="w-full h-full flex items-center justify-center text-gray-400 italic bg-gray-200 opacity-0 transition-opacity">
-                        [Hình ảnh xe Giant XTC 820]
-                    </div>
                 </div>
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Giant XTC 820</h3>
@@ -108,17 +102,13 @@
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Khung ALUXX SL siêu bền</li>
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Thích hợp leo dốc Prenn/Mimosa</li>
                     </ul>
-                    <button onclick="scrollToBooking('Giant XTC 820')" class="w-full bg-gray-900 text-white py-2 rounded-lg hover:bg-black transition">Chọn xe này</button>
+                    <button onclick="scrollToBooking('Giant XTC 820')" class="w-full bg-gray-900 text-white py-2 rounded-lg hover:bg-black transition font-semibold">Chọn xe này</button>
                 </div>
             </div>
-
 
             <!-- Trek Marlin 5 -->
             <div class="bike-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow">
                 <div class="bike-card-img" style="background-image: url('https://down-vn.img.susercontent.com/file/vn-11134201-7r98o-lqeec64mv8dz54@resize_w450_nl.webp');">
-                    <div class="w-full h-full flex items-center justify-center text-gray-400 italic bg-gray-200 opacity-0 transition-opacity">
-                        [Hình ảnh xe Trek Marlin 5]
-                    </div>
                 </div>
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Trek Marlin 5</h3>
@@ -127,14 +117,12 @@
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Thiết kế công thái học thoải mái</li>
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Thương hiệu cao cấp quốc tế</li>
                     </ul>
-                    <button onclick="scrollToBooking('Trek Marlin 5')" class="w-full bg-gray-900 text-white py-2 rounded-lg hover:bg-black transition">Chọn xe này</button>
+                    <button onclick="scrollToBooking('Trek Marlin 5')" class="w-full bg-gray-900 text-white py-2 rounded-lg hover:bg-black transition font-semibold">Chọn xe này</button>
                 </div>
             </div>
 
-
         </div>
     </section>
-
 
     <!-- Booking Form Section -->
     <section id="booking" class="py-16 bg-green-50">
@@ -157,23 +145,29 @@
                         </div>
                     </div>
 
-
-                    <div>
-                        <label class="block text-sm font-semibold mb-2">Chọn loại xe</label>
-                        <select id="bikeType" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none">
-                            <option value="Giant XTC 800">Giant XTC 800</option>
-                            <option value="Giant XTC 820">Giant XTC 820</option>
-                            <option value="Trek Marlin 5">Trek Marlin 5</option>
-                            <option value="Xe khác">Các dòng xe khác</option>
-                        </select>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Chọn loại xe</label>
+                            <select id="bikeType" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none bg-white">
+                                <option value="Giant XTC 800">Giant XTC 800</option>
+                                <option value="Giant XTC 820">Giant XTC 820</option>
+                                <option value="Trek Marlin 5">Trek Marlin 5</option>
+                                <option value="Xe khác">Các dòng xe khác</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Hình thức thuê</label>
+                            <select id="rentalType" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none bg-white">
+                                <option value="Theo ngày (150k/ngày)">Theo ngày (150k/ngày)</option>
+                                <option value="Theo giờ (50k/giờ)">Theo giờ (50k/giờ)</option>
+                            </select>
+                        </div>
                     </div>
-
 
                     <div>
                         <label class="block text-sm font-semibold mb-2">Ngày bắt đầu thuê</label>
                         <input type="date" id="startDate" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none">
                     </div>
-
 
                     <button type="submit" class="w-full bg-green-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-green-700 shadow-lg shadow-green-200 transition-all active:scale-[0.98]">
                         XÁC NHẬN ĐẶT XE
@@ -182,12 +176,11 @@
                
                 <div class="mt-8 pt-8 border-t text-center">
                     <p class="text-gray-600 mb-2">Hoặc gọi điện trực tiếp để được tư vấn:</p>
-                    <a href="tel:0944510510" class="text-3xl font-bold text-green-600 hover:text-green-700 decoration-none">0944 510 510</a>
+                    <a href="tel:0944510510" class="text-3xl font-bold text-green-600 hover:text-green-700">0944 510 510</a>
                 </div>
             </div>
         </div>
     </section>
-
 
     <!-- Contact & Footer -->
     <footer id="contact" class="bg-gray-900 text-white py-12">
@@ -202,7 +195,7 @@
                         </div>
                         <div class="flex items-center">
                             <i class="fas fa-phone mt-1 mr-4 text-green-500"></i>
-                            <a href="tel:0944510510" class="hover:text-green-400">0944 510 510</a>
+                            <a href="tel:0944510510" class="hover:text-green-400 transition">0944 510 510</a>
                         </div>
                         <div class="flex items-center">
                             <i class="fas fa-clock mt-1 mr-4 text-green-500"></i>
@@ -215,7 +208,8 @@
                     <ul class="text-gray-400 text-sm space-y-2">
                         <li>• Mang theo CCCD hoặc Hộ chiếu để làm thủ tục.</li>
                         <li>• Được trang bị miễn phí mũ bảo hiểm & khóa dây.</li>
-                        <li>• Giao xe tận nơi trong nội thành Đà Lạt (có phí hoặc miễn phí tùy quãng đường).</li>
+                        <li>• Giao xe tận nơi trong nội thành Đà Lạt (miễn phí tùy quãng đường).</li>
+                        <li>• Giá theo giờ (50k/h) áp dụng tối thiểu từ 1 giờ thuê.</li>
                         <li>• Hỗ trợ sự cố trên đường 24/7.</li>
                     </ul>
                 </div>
@@ -226,10 +220,9 @@
         </div>
     </footer>
 
-
     <!-- Custom Dialog/Modal for Success -->
     <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-[100] px-4">
-        <div class="bg-white rounded-2xl p-8 max-w-sm w-full text-center">
+        <div class="bg-white rounded-2xl p-8 max-w-sm w-full text-center shadow-2xl">
             <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i class="fas fa-check text-2xl"></i>
             </div>
@@ -239,7 +232,6 @@
         </div>
     </div>
 
-
     <script>
         function scrollToBooking(bikeName) {
             const select = document.getElementById('bikeType');
@@ -247,11 +239,9 @@
             document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
         }
 
-
         function closeModal() {
             document.getElementById('successModal').classList.add('hidden');
         }
-
 
         document.getElementById('rentalForm').addEventListener('submit', function(e) {
             e.preventDefault();
@@ -259,10 +249,11 @@
             const name = document.getElementById('userName').value;
             const phone = document.getElementById('userPhone').value;
             const bike = document.getElementById('bikeType').value;
+            const rentalType = document.getElementById('rentalType').value;
             const date = document.getElementById('startDate').value;
            
             const phoneNumber = "0944510510";
-            const message = `Chào chủ xe! Tôi là ${name} (SĐT: ${phone}). Tôi muốn đặt xe ${bike} vào ngày ${date}. Vui lòng xác nhận cho tôi nhé!`;
+            const message = `Chào chủ xe! Tôi là ${name} (SĐT: ${phone}). Tôi muốn đặt xe ${bike} hình thức ${rentalType} vào ngày ${date}. Vui lòng xác nhận cho tôi nhé!`;
            
             document.getElementById('successModal').classList.remove('hidden');
            
@@ -276,4 +267,3 @@
     </script>
 </body>
 </html>
-
